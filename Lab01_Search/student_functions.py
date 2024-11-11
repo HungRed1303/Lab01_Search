@@ -23,7 +23,6 @@ def BFS(matrix, start, end):
     path: list
         Founded path
     """
-    # TODO:
     queue = deque([start])
     visited = {start: None}
 
@@ -67,7 +66,6 @@ def DFS(matrix, start, end):
         Founded path
     """
 
-    # TODO: 
     stack = [start]
     visited = {start: None}
 
@@ -111,7 +109,7 @@ def UCS(matrix, start, end):
     path: list
         Founded path
     """
-    # TODO:  
+
     heap = [(0, start)] #chi phí và node trong hàng đợi
     dic_cost = {start: 0} #Dictionary chứa các node và chi phí
     visited = {start: None}
@@ -160,7 +158,6 @@ def GBFS(matrix, start, end):
     path: list
         Founded path
     """
-    # TODO:
     heap = [(0, start)]
     visited = {start: None}
 
@@ -212,7 +209,7 @@ def Astar(matrix, start, end, pos):
     path: list
         Founded path
     """
-    # TODO:
+
     heap = [(0, start)]
     visited = {start: None}
     dic_cost = {start: 0} #Chứa các node và chi phí tương ứng (Không bao gồm heuristic)
