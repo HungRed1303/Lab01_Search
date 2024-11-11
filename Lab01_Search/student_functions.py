@@ -216,7 +216,6 @@ def Astar(matrix, start, end, pos):
     while heap:
 
         current_cost, current_node = heapq.heappop(heap)
-        #Nếu đến đích thì dừng và lấy đường đi
         if current_node == end:
             path = []
             while current_node is not None:
